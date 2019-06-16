@@ -1,0 +1,32 @@
+{
+  "name": "@writetome51/get-data-urls",
+  "version": "0.0.1",
+  "description": "Async function that returns base64 data URLs representing each File from a passed FileList",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/get-data-urls.git"
+  },
+  "keywords": [
+    "data-url",
+    "data",
+    "url",
+    "array",
+    "files",
+    "file",
+    "list"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/get-data-urls/issues"
+  },
+  "homepage": "https://github.com/writetome51/get-data-urls#readme",
+  "devDependencies": {},
+  "dependencies": {
+  }
+}
