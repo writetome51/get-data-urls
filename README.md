@@ -5,13 +5,15 @@ An async function that gets an array of data URLs generated from `files`.
 
 ## Example
 
-```ts
+```html
 <!--  In the html, get array of Files from a file input and pass it to
     a function:  
 -->
 <p>Choose files to generate data urls from:</p>
 <input type="file" multiple  (change)="addToURLs($event.target.files)"/>
-	
+```
+
+```ts
 // In a javascript component:
 async addToURLs(files) {
      let urls = await getDataURLs(files);
