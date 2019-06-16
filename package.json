@@ -1,7 +1,7 @@
 {
   "name": "@writetome51/get-data-urls",
   "version": "0.0.1",
-  "description": "Async function that returns base64 data URLs representing each File from a passed FileList",
+  "description": "Async function that returns data URLs representing each File from a passed array of Files",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
