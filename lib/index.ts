@@ -7,26 +7,15 @@
      this.dataURLs.push(...urls);
  }
  ************************/
+import { getDataURL } from '@writetome51/get-data-url';
 
 
 export async function getDataURLs(files: File[] | FileList): Promise<string[]> {
 	let dataURLs = [];
 
-	return new Promise((returnData) => {
-		for (let i = 0; i < files.length; ++i) {
-
-			const reader = new FileReader();
-
-			reader.onload = () => {
-				dataURLs.push(reader.result);
-
-				if (dataURLs.length === files.length) {  // If finished reading each file...
-					returnData(dataURLs);
-				}
-			};
-
-			reader.readAsDataURL(files[i]);
-		}
-
-	});
+	for (let i = 0; i < files.length; ++i) {
+		let url = await getDataURL(files[i]);
+		dataURLs.push(url);
+	}
+	return dataURLs;
 }
