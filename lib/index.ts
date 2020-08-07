@@ -1,3 +1,6 @@
+import { getDataURL } from '@writetome51/get-data-url';
+
+
 /**************************
  Returns base64 data urls extracted from files.
  Usage Example:
@@ -7,8 +10,6 @@
      this.dataURLs.push(...urls);
  }
  ************************/
-import { getDataURL } from '@writetome51/get-data-url';
-
 
 export async function getDataURLs(files: File[] | FileList): Promise<string[]> {
 	let dataURLs = [];

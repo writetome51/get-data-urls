@@ -1,4 +1,3 @@
-"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -8,7 +7,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+
+import { getDataURL } from '@writetome51/get-data-url';
+
+
 /**************************
  Returns base64 data urls extracted from files.
  Usage Example:
@@ -18,15 +20,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
      this.dataURLs.push(...urls);
  }
  ************************/
-const get_data_url_1 = require("@writetome51/get-data-url");
-function getDataURLs(files) {
+
+export function getDataURLs(files) {
     return __awaiter(this, void 0, void 0, function* () {
         let dataURLs = [];
+
         for (let i = 0; i < files.length; ++i) {
-            let url = yield get_data_url_1.getDataURL(files[i]);
+            let url = yield getDataURL(files[i]);
             dataURLs.push(url);
         }
         return dataURLs;
     });
 }
-exports.getDataURLs = getDataURLs;

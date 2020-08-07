@@ -1,7 +1,8 @@
 {
   "name": "@writetome51/get-data-urls",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Async function that returns data URLs representing each File from a passed array of Files",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -27,6 +28,6 @@
   },
   "homepage": "https://github.com/writetome51/get-data-urls#readme",
   "dependencies": {
-    "@writetome51/get-data-url": "^0.0.1"
+    "@writetome51/get-data-url": "^1.0.0"
   }
 }

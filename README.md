@@ -15,6 +15,7 @@ An async function that gets an array of data URLs generated from `files`.
 
 ```ts
 // In a javascript component:
+
 async addToURLs(files) {
      let urls = await getDataURLs(files);
      this.dataURLs.push(...urls);
@@ -28,9 +29,6 @@ npm i  @writetome51/get-data-urls
 ```
 
 ## Loading
-```ts
-// If using TypeScript:
+```js
 import {getDataURLs} from '@writetome51/get-data-urls';
-// If using ES5 JavaScript:
-var getDataURLs = require('@writetome51/get-data-urls').getDataURLs;
 ```

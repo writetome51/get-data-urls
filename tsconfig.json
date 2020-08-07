@@ -4,8 +4,9 @@
       "es2015",
       "dom"
     ],
-    "module": "commonjs",
+    "module": "es6",
     "target": "es6",
+    "moduleResolution": "node",
     "declaration": true,
     "outDir": "./dist"
   },
